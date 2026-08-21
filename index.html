@@ -358,16 +358,20 @@
       color: var(--muted);
     }
 
-    .photo-placeholder {
-      min-height: 480px;
-      background: linear-gradient(135deg, #E8E1DA, #F6F1EB);
+    .brigitte-photo {
+      width: 100%;
+      height: 480px;
       border-radius: var(--radius);
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 30px;
-      color: #77776F;
-      border: 1px dashed #B8AEA4;
+      overflow: hidden;
+      background: #E8E1DA;
+      box-shadow: var(--shadow);
+    }
+
+    .brigitte-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .expertise {
@@ -511,6 +515,10 @@
 
       .hero-card {
         padding: 25px;
+      }
+
+      .brigitte-photo {
+        height: 400px;
       }
 
       .footer-grid {
@@ -845,11 +853,8 @@
 
       </div>
 
-      <div class="Birgitte_Bloem">
-        <div>
-          <strong>FOTO BRIGITTE</strong><br>
-          Plaats hier later een grote portretfoto van Brigitte.
-        </div>
+      <div class="brigitte-photo">
+        <img src="images/Birgitte_Bloem.jpeg" alt="Brigitte van Hout">
       </div>
 
     </div>
@@ -857,11 +862,8 @@
 
     <div class="about-grid" style="margin-top:80px">
 
-      <div class="Birgitte_Face">
-        <div>
-          <strong>FOTO BRIGITTE</strong><br>
-          Plaats hier later een tweede foto van Brigitte.
-        </div>
+      <div class="brigitte-photo">
+        <img src="images/Birgitte_Face.jpeg" alt="Brigitte van Hout">
       </div>
 
       <div>
